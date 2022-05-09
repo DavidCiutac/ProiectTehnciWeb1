@@ -1,16 +1,52 @@
-/* Bordered form */
-form {
-    border: 3px solid #f1f1f1;
+* {box-sizing: border-box}
+
+/* Add padding to containers */
+.container {
+    padding: 16px;
 }
 
-/* Full-width inputs */
+/* Full-width input fields */
 input[type=text], input[type=password] {
     width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
+    padding: 15px;
+    margin: 5px 0 22px 0;
     display: inline-block;
-    border: 1px solid #ccc;
-    box-sizing: border-box;
+    border: none;
+    background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+}
+
+/* Overwrite default styles of hr */
+hr {
+    border: 1px solid #f1f1f1;
+    margin-bottom: 25px;
+}
+
+
+
+/* Add a blue text color to links */
+a {
+    color: dodgerblue;
+}
+
+/* Set a grey background color and center the text of the "sign in" section */
+.signin {
+    background-color: #f1f1f1;
+    text-align: center;
+}
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+    span.psw {
+        display: block;
+        float: none;
+    }
+    .cancelbtn {
+        width: 100%;
+    }
 }
 
 /* Set a style for all buttons */
@@ -42,39 +78,7 @@ button:hover {
     margin: 24px 0 12px 0;
 }
 
-/* Avatar image */
-img.avatar {
-    width: 40%;
-    border-radius: 50%;
-}
-
-/* Add padding to containers */
-.container {
-    padding: 16px;
-
-}
-
-/* The "Forgot password" text */
-span.psw {
+#pl {
     float: right;
-    padding-top: 7px;
-}
-span.psw{
-    float: right;
-    padding-top: 7px;
-
 }
 
-/* Change styles for span and cancel button on extra small screens */
-@media screen and (max-width: 300px) {
-    span.psw {
-        display: block;
-        float: none;
-    }
-    .cancelbtn {
-        width: 100%;
-    }
-}
-#a{
-    height: 1px;
-}

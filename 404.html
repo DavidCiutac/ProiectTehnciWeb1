@@ -3,32 +3,35 @@
 
 <head>
   <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/navbar.css">
+  <link rel="stylesheet" href="css/footer.css">
+
+
 </head>
 
 </head>
 <body>
 
 <div class="topNavbar">
-  <a class="active" href="#home">Home</a>
+  <a  href="#">Home</a>
   <div class="dropdown">
-    <button class="dropbtn" ,id="buton">Instruments
-      <i class="down"></i>
-    </button>
-    <div class="dropdown-content">
-      <a href="#">Piano</a>
-      <a href="#">Guitar</a>
-    </div>
+      <button class="dropbtn" ,id="buton">Instruments
+          <i class="down"></i>
+      </button>
+      <div class="dropdown-content">
+          <a href="#">Piano</a>
+          <a href="#">Guitar</a>
+      </div>
 
-  </div>
+</div>
   <div class="dropdown">
     <button class="dropbtn" ,id="buton">Artists
       <i class="down"></i>
     </button>
     <div class="dropdown-content">
-      <a href="#">Artist1</a>
-      <a href="#">Artist2</a>
-      <a href="#">Artist3</a>
-      <a href="#">Artist4</a>
+      <a href="HarryStykes.html">Harry Styles</a>
+      <a href="#">Ayo</a>
+      <a href="#">Arctic Monkeys</a>
     </div>
 
   </div>
@@ -73,6 +76,7 @@
       le solicita. De asemenea, poţi vota piesele cerute deja
       (peste 3400), pentru a le creşte sansa de a fi trimise de
       alţi utilizatori.
+     
 
       Dacă eşti începător, aruncă o privire peste cele câteva
       lecţii care te vor ajuta să faci primii paşi la chitară
@@ -83,7 +87,10 @@
       chiar şi începătorii, deşi e binevenită în primul rând
       calitatea transpunerilor trimise. De asemenea, dacă crezi
       că ai o versiune mai bună la orice piesă existentă în
-      arhivă, o poţi trimite spre publicare</p>
+      arhivă, o poţi trimite spre publicare
+
+
+    </p>
 </div>
 <br>
 <br>
@@ -107,25 +114,8 @@
 
 
 
-<script>
-    // Automatic Slideshow - change image every 3 seconds
-    var myIndex = 0;
-    carousel();
 
-    function carousel() {
-        var i;
-        var x = document.getElementsByClassName("mySlides");
-        for (i = 0; i < x.length; i++) {
-            x[i].style.display = "none";
-        }
-        myIndex++;
-        if (myIndex > x.length) {myIndex = 1}
-        x[myIndex-1].style.display = "block";
-        setTimeout(carousel, 10000);
-    }
-</script>
-
-
+<script src="js/main.js"></script>
 
 </body>
 

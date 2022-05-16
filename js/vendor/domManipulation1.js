@@ -1,7 +1,7 @@
 
 
 window.onload = () => {
-    const btn = document.getElementById('add-btn');
+    const btn = document.getElementById('add-btn1');
     btn.addEventListener("click",learned)
     function learned()
     {
@@ -11,7 +11,7 @@ window.onload = () => {
         const year=d.getFullYear()
         newDiv=document.createElement("div")
         newDiv.innerHTML="Congratulations! You learned this song on "+day+"."+month+"."+year
-        let p=document.querySelector("#paragraf")
+        let p=document.querySelector("#paragraf1")
         p.appendChild(newDiv);
         btn.remove();
     }

@@ -87,6 +87,10 @@ body {
     padding-top: 6px;
     /*background-color: #f44336;*/
 }
+/*#scroll div{*/
+/*    background-color: #333333;*/
+/*    color: white;*/
+/*}*/
 #scroll1 {
     overflow-x:hidden;
     overflow-y:visible;

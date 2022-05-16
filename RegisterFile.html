@@ -1,18 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-  <link rel="stylesheet" href="css/RegisterCSS.css">
+  <meta charset="UTF-8">
+  <title>Title</title>
+   <link rel="stylesheet" href="css/RegisterCSS.css">
+  <script src="js/register.js"></script>
+
 </head>
 <body>
-<form action="action_page.php">
+<form action="action_page.php" method="post" id="Form" >
   <div class="container">
     <h1>Register</h1>
+    <div id="error"></div>
     <p>Please fill in this form to create an account.</p>
     <hr>
     <label for="username"><b>Username</b></label>
-    <input type="text" placeholder="Enter Username" name="email" id="username" required>
+    <input type="text" placeholder="Enter Username" name="username" id="username" required>
 
 
     <label for="email"><b>Email</b></label>

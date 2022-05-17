@@ -52,3 +52,26 @@ a {
     background-color: #f1f1f1;
     text-align: center;
 }
+
+#myPopup {
+    display: none;
+    position: fixed;
+    width: 40%;
+    top:50px;
+    right:50%;
+    background-color: #ddd;
+    height:100px;
+    text-align: center;
+    border: solid black 2px;
+
+}
+
+#myExit {
+
+   
+    width: 10%;
+    text-align: center;
+    color:white;
+    background-color: red;
+    padding: 5px;
+}

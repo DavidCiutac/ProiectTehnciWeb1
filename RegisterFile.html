@@ -7,6 +7,25 @@
   <script src="js/register.js"></script>
 
 </head>
+<script>
+  function func1(event) {
+    alert("Now that you carefully read our terms and agreements you can continue registering");
+    event.stopPropagation();
+
+  }
+  function openPopup() {
+    popup = document.getElementById("myPopup");
+    popup.style.display = "block";
+  }
+
+
+
+  function closePopup() {
+    popup = document.getElementById("myPopup");
+    popup.style.display = "none";
+  }
+</script>
+
 <body>
 <form action="action_page.php" method="post" id="Form" >
   <div class="container">
@@ -28,8 +47,14 @@
     <input type="password" placeholder="Repeat Password" name="psw-repeat" id="psw-repeat" required>
     <hr>
 
-    <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
+    <p>By creating an account you agree to our <a href="#"  onclick="openPopup()">Terms & Privacy</a> </p>
     <button type="submit" class="registerbtn">Register</button>
+    <div id="myPopup">
+      *Aici se afla o vrajeala pe care nu o citeste nimeni niciodata*
+      <div onclick="closePopup()", id="myExit">Exit
+        <div onclick="func1(event)">Agree</div>
+      </div>
+    </div>
   </div>
 
   <div class="container signin">
@@ -38,3 +63,4 @@
 </form>
 </body>
 </html>
+

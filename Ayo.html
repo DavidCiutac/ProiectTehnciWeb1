@@ -2,3 +2,69 @@
     <script src="js/ayo.js"></script>
 </head>
 <h1>Ayo Page</h1>
+<body>
+
+
+
+<script>
+    // window.onload = ()=>
+    // {
+    //     let confirm=document.querySelector("#agreebtn")
+    //     let exist=document.querySelector("#myExit")
+    //     exist.addEventListener("click",closePopup)
+    //     confirm.addEventListener("click",alertPop)
+    //
+    // }
+
+
+
+
+
+</script>
+<script>
+    function func1(event) {
+        alert("DIV 1");
+        event.stopPropagation();
+
+    }
+    function openPopup() {
+        popup = document.getElementById("myPopup");
+        popup.style.display = "block";
+    }
+
+
+
+    function closePopup() {
+        popup = document.getElementById("myPopup");
+        popup.style.display = "none";
+    }
+</script>
+
+<style>
+    #myPopup {
+        display: none;
+        position: absolute;
+        top:50px;
+        right:50%;
+        background-color: blue;
+        height:100px;
+        width:100px;
+    }
+
+    #myExit {
+        position: absolute;
+        right:0px;
+        text-align: right;
+        color:white;
+        background-color: red;
+    }
+</style>
+
+<a href="#" onclick="openPopup()">Open Popup</a>
+<div id="myPopup">
+    <div onclick="closePopup()", id="myExit">DIV 2
+        <div onclick="func1(event)">DIV 1</div>
+</div>
+
+
+</div>

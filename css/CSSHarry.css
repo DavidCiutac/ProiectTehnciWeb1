@@ -100,7 +100,7 @@ body {
     padding-top: 6px;
     /*background-color: #f44336;*/
 }
-.scrollBtn, .stopBtn, .add-btn{
+.scrollBtn, .stopBtn, .add-btn  {
     color: white;
     font-size: 30px;
     padding: 10px 24px;;
@@ -157,4 +157,14 @@ body {
         -webkit-transform: rotate(360deg);
         transform:rotate(360deg);
     }
+}
+
+#dark , #add-btn1,#add-btn{
+    color: white;
+    font-size: 15px;
+    padding: 10px 24px;;
+    text-align: center;
+    background-color: black;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    transition: 1s;
 }

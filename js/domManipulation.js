@@ -1,6 +1,6 @@
 
 
-window.onload = () => {
+function functie2() {
     const btn = document.getElementById('add-btn');
     btn.addEventListener("click",learned)
     function learned()

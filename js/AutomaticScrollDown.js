@@ -17,13 +17,13 @@ function stopScroll(){
 
 function alertMe()
 {
-    alert("Did you like this song?")
+    alert("Did you finish this song? If not play it again to master")
 }
 
 var myInterval1
 function startScroll1(){
-    var time=6000
-    time=time*3.4
+    var time=60000
+    time=time*3.2
     setTimeout(alertMe,time)
     myInterval1= setInterval(function(){
         var element=document.getElementById("scroll1")

@@ -81,24 +81,21 @@ body {
 #scroll {
     overflow-x:hidden;
     overflow-y:visible;
-    height:700px;
+    height:600px;
     width: 500px;
     border-top:  3px solid #333333;
     padding-top: 6px;
-    /*background-color: #f44336;*/
+    
 }
-/*#scroll div{*/
-/*    background-color: #333333;*/
-/*    color: white;*/
-/*}*/
+
 #scroll1 {
     overflow-x:hidden;
     overflow-y:visible;
-    height:700px;
+    height:600px;
     width: 500px;
     border-top:  3px solid #333333;
     padding-top: 6px;
-    /*background-color: #f44336;*/
+    
 }
 .scrollBtn, .stopBtn, .add-btn  {
     color: white;

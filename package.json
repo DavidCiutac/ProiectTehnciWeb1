@@ -1,17 +1,18 @@
 {
-  "name": " ",
-  "version": "0.0.1",
+  "name": "project-2",
+  "version": "1.0.0",
   "description": "",
-  "keywords": "",
-  "license": "",
-  "author": "",
+  "main": "index.js",
   "scripts": {
-    "build": "parcel build ArcticMonkeys.html",
-    "dev": "parcel ArcticMonkeys.html --open",
-    "start": "npm run build && npm run dev",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com//DavidCiutac/Proiect.git"
+  },
+  "author": "",
+  "license": "ISC",
   "devDependencies": {
-    "parcel-bundler": "^1.12.4"
+    "express": "^4.18.1"
   }
 }

@@ -16,7 +16,7 @@ window.onload = () => {
         }
         if(verifyName()==false)
         {
-            messages.push(" name must be 6-20 characters at the beginning of uppercase letter (no sign allowed but backslash) ")
+            messages.push(" username must be 5-12 characters with small letters ")
         }
         if(verifyPwd()==false)
         {
@@ -37,28 +37,16 @@ function verifyPwd() {
     var verifyPwd = document.getElementById('psw').value;
     var pwd = / ^ [A-Z] [a-za-z0-9] \ w {7,14}. {1,20} $/;
     // uppercase alphanumeric mixed with 8-15 digits
-    if (!pwd.test(verifyPwd))   {
-        // $("#username").css("border-color", "red");
-        return false;
-    }
-    else
-    {
-        return true;
-    }
+    return pwd.test(verifyPwd)
+    
 }
 
 function verifyName() {
     //User name verification
     var verifyName = document.getElementById('uname').value;
-    var name = / ^ [A-Z] [0-9a-zA-Z] [a-za-z 0-9] {5,19} $/;
-    // 6-20 characters at the beginning of the capital letter (no sign but 2;)
-    if (!name.test(verifyName)) {
-        // //$("#username"). After ("< span > 6-20 characters at the beginning of uppercase letter (no sign allowed but" \ "< span >");
-        // $("#username").css("border-color", "red");
-        return false;
-    }
-    else
-    {
-        return true;
-    }
+    var name = /^[a-z\d]{5,12}$/
+    // username must be 5-12 characters with small letters
+    return name.test(verifyName)
+   
 }
+
